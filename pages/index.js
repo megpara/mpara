@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <Layout>
             <video loop autoPlay muted className="absolute w-screen h-screen top-0 left-0 object-cover" src="wdtease.mov" />
-            <SideMenu />
+            {/* <SideMenu /> */}
         </Layout>
     )
 }
