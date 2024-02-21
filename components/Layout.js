@@ -16,6 +16,7 @@ export default function Layout({ children }) {
         <div className="w-full h-full relative">
             <Head>
                 <link id="icon" rel="icon" href="/favicons/m.png" />
+                <link rel="stylesheet" href="https://use.typekit.net/uao4cwk.css" />
             </Head>
             <Header />
             {children}

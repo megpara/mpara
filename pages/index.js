@@ -5,8 +5,11 @@ import SideMenu from "../components/SideMenu";
 export default function Home() {
     return (
         <Layout>
+            <div className="w-full h-full relative">
             <video loop autoPlay muted className="absolute w-screen h-screen top-0 left-0 object-cover" src="wdtease.mov" />
+            {/* <img src="/index/daphne.jpg" className="absolute w-screen h-screen top-0 left-0 object-cover" /> */}
             {/* <SideMenu /> */}
+            </div>
         </Layout>
     )
 }
