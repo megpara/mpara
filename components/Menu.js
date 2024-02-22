@@ -44,7 +44,7 @@ export default function Menu({ open, toggle }) {
                 }}
                 className="w-full h-full flex items-center justify-center"
             >
-            <div className="flex flex-wrap justify-center w-3/4 gap-8 z-20">
+            <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
                 <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/" />
                 <MenuItem subtitleOne="About" subtitleTwo="mpara" title="Origin" link="/" />
                 <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/" />
