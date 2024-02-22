@@ -1,66 +1,58 @@
 import { AnimatePresence, motion } from "framer-motion";
 import MenuItem from "./MenuItem";
-import MenuSubtitle from "./MenuSubtitle";
-import MenuTitle from "./MenuTitle";
 
 export default function Menu({ open, toggle }) {
     return (
         <AnimatePresence>
         {open && (
+        <div  className="fixed top-0 right-0 w-full h-full uppercase">
           <motion.div
-            initial={{ width: "0%", opacity: 0 }}
+            initial={{ width: "0%" }}
             animate={{
               width: "100%",
-              opacity: 1,
-              transition: { duration: 1 },
+              transition: { duration: 0.5 },
             }}
             exit={{
               width: "0%",
-              opacity: 0,
-              transition: { duration: 1 },
+              transition: { duration: 0.2 },
             }}
-            className="fixed top-0 right-0 z-20 h-screen bg-[#131313] py-8 px-4"
+            className="fixed top-0 right-0 h-screen bg-[#131313] py-8 px-4"
             id="menu-container"
           >
             <motion.button 
             whileHover={{
-                rotate: 90,
-                transition: { duration: 1 },
+                scale: 1.2,
+                transition: { duration: 0.2 },
             }}
-            className="absolute top-8 right-4"
+            className="fixed h-[12vh] flex z-40 top-0 right-0 items-center right-8"
             onClick={toggle}
             >
                 X
             </motion.button>
-            <div className="w-full h-full flex items-center justify-center">
-            <div className="flex flex-wrap justify-center w-3/4 gap-8">
-                <MenuItem>
-                    <MenuSubtitle>Work<br />samples</MenuSubtitle>
-                    <MenuTitle>Work</MenuTitle>
-                </MenuItem>
-                <MenuItem>
-                    <MenuSubtitle>About<br />Mpara</MenuSubtitle>
-                    <MenuTitle>Origin</MenuTitle>
-                </MenuItem>
-                <MenuItem>
-                    <MenuSubtitle>Mission<br />statement</MenuSubtitle>
-                    <MenuTitle>Ethos</MenuTitle>
-                </MenuItem>
-                <MenuItem>
-                    <MenuSubtitle>Take<br />class</MenuSubtitle>
-                    <MenuTitle>Teaching</MenuTitle>
-                </MenuItem>
-                <MenuItem>
-                    <MenuSubtitle>Upcoming<br />shows</MenuSubtitle>
-                    <MenuTitle>Events</MenuTitle>
-                </MenuItem>
-                <MenuItem>
-                    <MenuSubtitle>Mpara<br />gear</MenuSubtitle>
-                    <MenuTitle>Merch</MenuTitle>
-                </MenuItem>
+            </motion.div>
+
+            <motion.div 
+                initial={{ opacity: "0%" }}
+                animate={{
+                opacity: "100%",
+                transition: { duration: 1 },
+                }}
+                exit={{
+                opacity: "0%",
+                transition: { duration: 0.2 },
+                }}
+                className="w-full h-full flex items-center justify-center"
+            >
+            <div className="flex flex-wrap justify-center w-3/4 gap-8 z-20">
+                <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/" />
+                <MenuItem subtitleOne="About" subtitleTwo="mpara" title="Origin" link="/" />
+                <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/" />
+                <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/" />
+                <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/" />
+                <MenuItem subtitleOne="Mpara" subtitleTwo="gear" title="Merch" link="/" />
             </div>
+            </motion.div>
             </div>
-          </motion.div>
         )}
         </AnimatePresence>
     )
