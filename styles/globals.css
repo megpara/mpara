@@ -18,3 +18,13 @@ body {
     font-weight: 100;
     background-color: #131313;
 }
+
+.footer {
+    width: calc(100vw - 4rem);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: calc(100vw - 2rem);
+    }
+}

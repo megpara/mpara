@@ -1,11 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import MenuItem from "./MenuItem";
+import Footer from "./Footer";
 
 export default function Menu({ open, toggle }) {
     return (
         <AnimatePresence>
         {open && (
-        <div  className="fixed top-0 right-0 w-full h-full uppercase">
+        <div className="fixed top-0 right-0 w-full h-full uppercase">
           <motion.div
             initial={{ width: "0%" }}
             animate={{
@@ -24,7 +25,7 @@ export default function Menu({ open, toggle }) {
                 scale: 1.2,
                 transition: { duration: 0.2 },
             }}
-            className="fixed h-[12vh] flex z-40 top-0 right-0 items-center right-8"
+            className="fixed h-[12vh] flex z-40 top-0 right-0 items-center right-4 md:right-8"
             onClick={toggle}
             >
                 X
@@ -51,6 +52,7 @@ export default function Menu({ open, toggle }) {
                 <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/" />
                 <MenuItem subtitleOne="Mpara" subtitleTwo="gear" title="Merch" link="/" />
             </div>
+            <Footer />
             </motion.div>
             </div>
         )}
