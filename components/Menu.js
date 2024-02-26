@@ -6,7 +6,7 @@ export default function Menu({ open, toggle }) {
     return (
         <AnimatePresence>
         {open && (
-        <div className="fixed top-0 right-0 w-full h-full uppercase">
+        <div className="fixed top-0 right-0 w-full h-full uppercase z-40 text-white">
           <motion.div
             initial={{ width: "0%" }}
             animate={{
