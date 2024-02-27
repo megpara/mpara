@@ -25,7 +25,7 @@ export default function Menu({ open, toggle }) {
                 scale: 1.2,
                 transition: { duration: 0.2 },
             }}
-            className="fixed h-[12vh] flex z-40 top-0 right-0 items-center right-4 md:right-8"
+            className="fixed h-[12vh] flex z-50 top-0 right-0 items-center right-4 md:right-8"
             onClick={toggle}
             >
                 X
@@ -45,7 +45,7 @@ export default function Menu({ open, toggle }) {
                 className="w-full h-full flex items-center justify-center"
             >
             <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
-                <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/" />
+                <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/work" />
                 <MenuItem subtitleOne="About" subtitleTwo="mpara" title="Origin" link="/origin" />
                 <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/" />
                 <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/" />
