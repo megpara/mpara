@@ -32,8 +32,8 @@ const works = [
 
 export default function Work() {
     const router = useRouter();
-    const handleRefresh = () => {
-        router.reload();
+    const mockClick = () => {
+        
     };
     const [wdOpen, setwdOpen] = useState(false);
     const togglewd = () => {
@@ -42,12 +42,12 @@ export default function Work() {
 
     return(
         <Layout>
-            <div className="text-white w-full columns-2 md:columns-3 gap-8 md:gap-16 p-8 pt-[15vh] relative">
+            <div className="text-white w-full columns-2 md:columns-3 gap-2 md:gap-4 p-8 pt-[15vh] relative">
                 {works.map((work) => (
-                    <div className="mb-8 md:mb-16 group relative cursor-pointer" onClick={(work.title == "Well Done") ? togglewd : handleRefresh}>
-                        {(work.type) == "image" && <img src={work.media}/>}
-                        {(work.type) == "video" && <video loop autoPlay muted src={work.media}/>}
-                        <div className="absolute top-0 left-0 w-full h-full bg-[#00000050] invisible group-hover:visible p-8">
+                    <div className="mb-8 md:mb-16 group relative cursor-pointer" onClick={(work.title == "Well Done") ? togglewd : mockClick}>
+                        {(work.type) == "image" && <img src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
+                        {(work.type) == "video" && <video loop autoPlay muted src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
+                        <div className="text-[#bab5b1] group-hover:text-white duration-300 pt-8 break-inside-avoid-column">
                             <div className="font-display uppercase tracking-widest">{work.title}</div>
                             <div className="text-xs lowercase italic">{work.subtitle}</div>
                         </div>
