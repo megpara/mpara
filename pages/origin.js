@@ -5,7 +5,7 @@ export default function Origin() {
         <Layout>
                 <div className="relative w-full h-full flex flex-col z-[-1]">
                     <div className="basis-1/3 text-white flex justify-between pt-[24vh] px-4 md:px-8">
-                        <div className="basis-1/2 font-display uppercase text-4xl font-normal">Origin</div>
+                        <div className="basis-1/2 font-display uppercase text-4xl font-normal tracking-widest">Origin</div>
                         <div className="basis-1/2 italic lowercase text-[#bab5b1] text-sm">
                             Mpara stems from the name Megan Paradowski and alludes to the Latin word &quot;emparer,&quot; meaning to take posession of something
                             <br />

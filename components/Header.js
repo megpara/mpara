@@ -10,7 +10,6 @@ export default function Header() {
             <Link className="basis-1/2 flex justify-center z-40" href="/" replace>
                 <img src="logoWhiteMvmt.png" className="max-w-[150px]"/>
             </Link>
-            {/* <div className="basis-1/3" /> */}
         </div>
     )
 }

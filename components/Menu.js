@@ -47,10 +47,10 @@ export default function Menu({ open, toggle }) {
             <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
                 <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/work" />
                 <MenuItem subtitleOne="About" subtitleTwo="mpara" title="Origin" link="/origin" />
-                <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/" />
-                <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/" />
-                <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/" />
-                <MenuItem subtitleOne="Mpara" subtitleTwo="gear" title="Merch" link="/" />
+                <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/ethos" />
+                <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/teaching" />
+                <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/events" />
+                <MenuItem subtitleOne="coming" subtitleTwo="soon" title="Merch" link="/" />
             </div>
             <Footer />
             </motion.div>

@@ -1,35 +1,60 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import Layout from "../components/Layout";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Teaser from "../components/Teaser";
+import { useRouter } from "next/router";
+
+const works = [
+    {
+        media: "/wdtease.mov",
+        title: "Well Done",
+        subtitle: "Concept, choreography, and direction",
+        type: "video",
+    },
+    {
+        media: "/work/heliophilia.jpg",
+        title: "Heliophilia",
+        subtitle: "In collaboration with Leah Piepgras, coming soon",
+        type: "image",
+    },
+    {
+        media: "/work/hatis.jpg",
+        title: "Hatis Noit",
+        subtitle: "Coming soon",
+        type: "image",
+    },
+    {
+        media: "/work/ana.png",
+        title: "Becoming",
+        subtitle: "In collaboration with Ana Reyes, coming soon",
+        type: "image",
+    }
+];
 
 export default function Work() {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        let sections = gsap.utils.toArray(".panel");
-        const containerWidth = document.querySelector(".container").offsetWidth;
-        const containerHeight = document.querySelector(".container").offsetHeight;
+    const router = useRouter();
+    const handleRefresh = () => {
+        router.reload();
+    };
+    const [wdOpen, setwdOpen] = useState(false);
+    const togglewd = () => {
+        setwdOpen(!wdOpen);
+    };
 
-        gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: document.querySelector(".container"),
-                pin: true,
-                scrub: 1,
-                snap: 1 / (sections.length - 1),
-                end: `+=${containerWidth}`
-            }
-        })
-    })
-    return (
+    return(
         <Layout>
-        <div className="container flex w-[400vw] max-w-[400vw] overflow-x-hidden overflow-y-auto">
-            <div className="panel bg-black w-screen h-screen text-white">Creator</div>
-            <div className="panel w-screen h-screen text-white">Director</div>
-            <div className="panel bg-black w-screen h-screen text-white">Cinematographer</div>
-            <div className="panel w-screen h-screen text-white">Editor</div>
-        </div>
+            <div className="text-white w-full columns-2 md:columns-3 gap-8 md:gap-16 p-8 pt-[15vh] relative">
+                {works.map((work) => (
+                    <div className="mb-8 md:mb-16 group relative cursor-pointer" onClick={(work.title == "Well Done") ? togglewd : handleRefresh}>
+                        {(work.type) == "image" && <img src={work.media}/>}
+                        {(work.type) == "video" && <video loop autoPlay muted src={work.media}/>}
+                        <div className="absolute top-0 left-0 w-full h-full bg-[#00000050] invisible group-hover:visible p-8">
+                            <div className="font-display uppercase tracking-widest">{work.title}</div>
+                            <div className="text-xs lowercase italic">{work.subtitle}</div>
+                        </div>
+                    </div>
+                ))}
+                <Teaser open={wdOpen} toggle={togglewd} />
+            </div>
         </Layout>
     )
 }
