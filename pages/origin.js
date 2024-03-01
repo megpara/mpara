@@ -6,7 +6,7 @@ export default function Origin() {
                 <div className="relative z-[-1]">
                     <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">
                         <div className="basis-1/2 font-display uppercase text-4xl font-normal tracking-widest">Origin</div>
-                        <div className="basis-1/2 text-[#bab5b1] text-sm">
+                        <div className="basis-1/2 text-[#bab5b1] text-sm italic">
                             Empara originates from the Latin word &quot;emparer,&quot; meaning to take posession of something
                             <br />
                             <br />
@@ -15,7 +15,7 @@ export default function Origin() {
                     </div>
                     <div className="text-white flex justify-between pt-[24vh] pb-[12vh] px-4 md:px-8">
                         <img src="/headshot.png" className="basis-1/2 max-w-[400px] object-cover pb-8"/>
-                        <div className="basis-1/2 text-[#bab5b1] text-sm text-justify">
+                        <div className="basis-1/2 text-[#bab5b1] text-sm italic text-justify">
                             Megan Paradowski has choreographed and performed in contemporary dance works across the US and Europe in venues such as 2220 Arts + Archives, the Museum of Neon Art, the Institute for Art and Olfaction, NAVEL LA, and Hosek Contemporary Berlin. Her work has been reviewed by the LA Times, Autre Magazine, LA Dance Chronicle, and Fjord Review, amongst others. She is honored to have received grants from the German Consulate General in Los Angeles and the US Embassy in Cyprus. She has had the incredible opportunity to tour and perform her work over the past five years in places such as Berlin, London, and Cyprus.
                             <br />
                             <br />

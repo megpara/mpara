@@ -13,9 +13,9 @@ export default function Events() {
                         <video loop autoPlay muted src="/wdtease.mov" className="w-full md:w-1/2 h-auto"/>
                         <div className="pt-8 text-center">
                             <div className="font-display tracking-widest uppercase text-3xl font-normal">Well Done</div>
-                            <div className="text-sm pt-2">An immersive dining experience</div>
-                            <div className="text-sm pt-2">April 29th, 7:00pm</div>
-                            <div className="text-sm">Melody Wine Bar on Virgil</div>
+                            <div className="text-sm pt-2 italic text-[#bab5b1]">An immersive dining experience</div>
+                            <div className="text-sm pt-2 italic text-[#bab5b1]">April 29th, 7:00pm</div>
+                            <div className="text-sm italic text-[#bab5b1]">Melody Wine Bar on Virgil</div>
                         </div>
                     </a>
                 </div>
