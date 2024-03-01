@@ -8,7 +8,7 @@ export default function Events() {
                     <div className="font-display tracking-widest uppercase text-3xl pb-2">Well Done</div>
                     <div className="text-sm italic text-[#bab5b1] pb-8">An immersive dining experience</div>
 
-                        <video loop autoPlay muted src="/wdtease.mov" className="w-full md:w-1/2 h-auto"/>
+                        <video loop autoPlay muted src="/wdtease.mov" playsInline className="w-full md:w-1/2 h-auto"/>
                         <div className="pt-8 text-center">
                             <div className="text-sm italic text-[#bab5b1]">April 29th, 7:00pm</div>
                             <div className="text-sm italic text-[#bab5b1]">Melody Wine Bar on Virgil</div>
