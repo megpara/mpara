@@ -85,8 +85,8 @@ export default function Teaching() {
         <Layout>
             <div className="relative">
                 <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">
-                    <div className="basis-1/2 font-display uppercase text-4xl tracking-widest">Upcoming</div>
-                    <div className="basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
+                    <div className="basis-1/3 md:basis-1/2 font-display uppercase text-xl md:text-4xl tracking-widest">Upcoming</div>
+                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {upcoming.map((workshop, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
                             <div className="basis-1/2">
@@ -103,8 +103,8 @@ export default function Teaching() {
                     </div>
                 </div>
                 <div className="text-white flex justify-between py-[12vh] px-4 md:px-8">
-                    <div className="basis-1/2 font-display uppercase text-4xl tracking-widest">Past</div>
-                    <div className="basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
+                    <div className="basis-1/3 md:basis-1/2 font-display uppercase text-xl md:text-4xl tracking-widest">Past</div>
+                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {past.map((workshop, index) => (
                         <div className={"flex justify-between pb-2"  + (index !== 0 ? " pt-2" : "")}>
                             <div>{workshop.title}</div>
