@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 export default function Events() {
     useEffect(() => {
-        gsap.from(".panel", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
+        // gsap.from(".panel", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
     }, [])
     return (
         <Layout>
@@ -13,8 +13,9 @@ export default function Events() {
                         <video loop autoPlay muted src="/wdtease.mov" className="w-full md:w-1/2 h-auto"/>
                         <div className="pt-8 text-center">
                             <div className="font-display tracking-widest uppercase text-3xl font-normal">Well Done</div>
-                            <div className="lowercase text-xs italic pt-2">April 29th, 7:00pm</div>
-                            <div className="lowercase text-xs italic pt-2">Melody Wine Bar on Virgil</div>
+                            <div className="text-sm pt-2">An immersive dining experience</div>
+                            <div className="text-sm pt-2">April 29th, 7:00pm</div>
+                            <div className="text-sm">Melody Wine Bar on Virgil</div>
                         </div>
                     </a>
                 </div>

@@ -8,7 +8,7 @@ export default function Header() {
                 <a href="https://www.instagram.com/" target="_blank">Ig</a>
             </div>
             <Link className="basis-1/2 flex justify-center z-40" href="/" replace>
-                <img src="logoWhiteMvmt.png" className="max-w-[150px]"/>
+                <img src="elogo.png" className="max-w-[200px]"/>
             </Link>
         </div>
     )

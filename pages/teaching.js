@@ -14,31 +14,31 @@ const upcoming = [
         info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619308"
     },
     {
-        title: "ocsa master class",
+        title: "OCSA master class",
         date: "March 2024",
         location: "",
         info: ""
     },
     {
-        title: "grand arts master class",
+        title: "Grand Arts master class",
         date: "May 2024",
         location: "",
         info: ""
     },
     {
-        title: "park city",
+        title: "Park City",
         date: "July 2024",
         location: "",
         info: ""
     },
     {
-        title: "london",
+        title: "London",
         date: "August 2024",
         location: "",
         info: ""
     },
     {
-        title: "nyc",
+        title: "NYC",
         date: "September 2024",
         location: "",
         info: ""
@@ -86,25 +86,25 @@ export default function Teaching() {
             <div className="relative">
                 <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">
                     <div className="basis-1/2 font-display uppercase text-4xl font-normal tracking-widest">Upcoming</div>
-                    <div className="basis-1/2 italic lowercase text-[#bab5b1] text-sm flex flex-col divide-y-[1px] divide-[#bab5b1]">
+                    <div className="basis-1/2 text-[#bab5b1] text-sm flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {upcoming.map((workshop, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
                             <div className="basis-1/2">
                                 {workshop.title}
                             </div>
-                            <div className="basis-1/4">
+                            <div className="basis-2/6">
                                 {workshop.date}
                                 <br />
                                 {workshop.location}
                             </div>
-                            <a className="basis-1/4 text-right" href={workshop.info} target="_blank">{workshop.info ? "Register" : ""}</a>
+                            <a className="basis-1/6 text-right" href={workshop.info} target="_blank">{workshop.info ? "Register" : ""}</a>
                         </div>
                     ))}
                     </div>
                 </div>
                 <div className="text-white flex justify-between py-[12vh] px-4 md:px-8">
                     <div className="basis-1/2 font-display uppercase text-4xl font-normal tracking-widest">Past</div>
-                    <div className="basis-1/2 italic lowercase text-[#bab5b1] text-sm flex flex-col divide-y-[1px] divide-[#bab5b1]">
+                    <div className="basis-1/2 text-[#bab5b1] text-sm flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {past.map((workshop, index) => (
                         <div className={"flex justify-between pb-2"  + (index !== 0 ? " pt-2" : "")}>
                             <div>{workshop.title}</div>

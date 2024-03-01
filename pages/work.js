@@ -48,8 +48,8 @@ export default function Work() {
                         {(work.type) == "image" && <img src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
                         {(work.type) == "video" && <video loop autoPlay muted src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
                         <div className="text-[#bab5b1] group-hover:text-white duration-300 pt-8 break-inside-avoid-column">
-                            <div className="font-display uppercase tracking-widest">{work.title}</div>
-                            <div className="text-xs lowercase italic">{work.subtitle}</div>
+                            <div className="">{work.title}</div>
+                            <div className="text-xs">{work.subtitle}</div>
                         </div>
                     </div>
                 ))}
