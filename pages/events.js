@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import Layout from "../components/Layout";
-import gsap from "gsap";
 
 export default function Events() {
-    useEffect(() => {
-        gsap.from(".panel", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
-    }, [])
     return (
         <Layout>
             <div className="panel w-screen h-screen text-white flex flex-col items-center justify-center">

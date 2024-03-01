@@ -14,31 +14,12 @@ export default function Menu({ open, toggle }) {
               transition: { duration: 0.5 },
             }}
             exit={{
-              width: "0%",
-              transition: { duration: 0.2 },
+              // width: "0%",
+              transition: { duration: 0.2, delay: 0.2 },
             }}
             className="fixed top-0 right-0 h-screen bg-[#131313] py-8 px-4"
             id="menu-container"
           >
-            <div className="fixed top-0 right-0 w-full h-[12vh] flex justify-start items-center z-50 p-4 md:p-8">
-              <div className="basis-1/3"/>
-              <div className="basis-1/3 flex flex-col items-center justify-center">
-                <img src="logomp.png" className="max-w-[150px]"/>
-              </div>
-              <div className="basis-1/3 flex justify-end">
-              <motion.button 
-              whileHover={{
-                  scale: 1.2,
-                  transition: { duration: 0.2 },
-              }}
-              className="flex z-[200] items-center"
-              onClick={toggle}
-              >
-                  X
-              </motion.button>
-              </div>
-            </div>
-
             </motion.div>
             <motion.div 
                 initial={{ opacity: "0%" }}

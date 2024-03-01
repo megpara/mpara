@@ -1,11 +1,13 @@
 import Head from "next/head";
-import Header from "./Header";
 import { useEffect } from "react";
 import gsap from "gsap";
+import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
     var current = 0;
     var icons = ["/favicons/m.png", "/favicons/p.png", "/favicons/a.png", "/favicons/r.png", "/favicons/a.png"];
+
+    const router = useRouter();
     
     useEffect(() => {
         if (typeof document !== "undefined") {
@@ -15,7 +17,9 @@ export default function Layout({ children }) {
             document.getElementById('icon').href = url;
             }, 1500);
         }
-        gsap.from(".child", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
+        if (router.asPath != "/") {
+            gsap.from(".child", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
+        }
     }, [])
 
     return (
@@ -23,7 +27,6 @@ export default function Layout({ children }) {
             <Head>
                 <link id="icon" rel="icon" href="/favicons/m.png" />
             </Head>
-            <Header />
             <div className="child">
             {children}
             </div>
