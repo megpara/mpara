@@ -4,28 +4,28 @@ import gsap from "gsap";
 import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
-    var current = 0;
-    var icons = ["/favicons/m.png", "/favicons/p.png", "/favicons/a.png", "/favicons/r.png", "/favicons/a.png"];
-
+    var faviconIndex = 0;
     const router = useRouter();
     
     useEffect(() => {
         if (typeof document !== "undefined") {
-        setInterval(() => {
-            var icon = (++current % icons.length);
-            var url = icons[icon];
-            document.getElementById('icon').href = url;
-            }, 1500);
+        var interval = setInterval(() => {
+            console.log(document.getElementById('icon').href);
+            faviconIndex++;
+            faviconIndex %= 6;
+            document.getElementById('icon').href = "/favicons/" + faviconIndex + ".png";
+            }, 3000);
         }
         if (router.asPath != "/") {
             gsap.from(".child", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
         }
+        return () => clearInterval(interval);
     }, [])
 
     return (
         <div className="w-full h-full relative">
             <Head>
-                <link id="icon" rel="icon" href="/favicons/m.png" />
+                <link id="icon" rel="icon" href="../../favicons/0.png" />
             </Head>
             <div className="child">
             {children}
