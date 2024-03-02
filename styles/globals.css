@@ -29,6 +29,15 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.heading {
+    
+}
+
+.display {
+    font-family: 'The Seasons';
+    font-weight: 100;
+}
+
 @media (max-width: 768px) {
     .footer {
         width: calc(100vw - 2rem);

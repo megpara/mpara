@@ -6,7 +6,7 @@ export default function Menu({ open, toggle }) {
     return (
         <AnimatePresence>
         {open && (
-        <div className="fixed top-0 right-0 w-full h-full uppercase text-white z-50">
+        <div className="fixed top-0 right-0 w-full h-full text-white z-50">
           <motion.div
             initial={{ width: "0%" }}
             animate={{
@@ -35,11 +35,11 @@ export default function Menu({ open, toggle }) {
             >
             <div className="flex flex-wrap justify-center w-full md:w-3/4 gap-8 z-20 menu">
                 <MenuItem subtitleOne="Work" subtitleTwo="samples" title="Work" link="/work" />
-                <MenuItem subtitleOne="About" subtitleTwo="mpara" title="Origin" link="/origin" />
+                <MenuItem subtitleOne="About" subtitleTwo="Empara" title="Origin" link="/origin" />
                 <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/ethos" />
                 <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/teaching" />
                 <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/events" />
-                <MenuItem subtitleOne="coming" subtitleTwo="soon" title="Merch" link="/" />
+                <MenuItem subtitleOne="Coming" subtitleTwo="soon" title="Merch" link="/" />
             </div>
             <Footer />
             </motion.div>
