@@ -13,12 +13,12 @@ const upcoming = [
         location: "Highland Park, LA",
         info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619308"
     },
-    {
-        title: "OCSA master class",
-        date: "March 2024",
-        location: "",
-        info: ""
-    },
+    // {
+    //     title: "OCSA master class",
+    //     date: "March 2024",
+    //     location: "",
+    //     info: ""
+    // },
     {
         title: "Grand Arts master class",
         date: "May 2024",
