@@ -16,8 +16,7 @@ export default function Ethos() {
                     If you are an artist or space looking to create an unconventional product or experience, please <a href="mailto:megan@emparadance.com" className="underline underline-offset-4">reach out</a> as we'd love to hear from you.
                     </div>
                 </div>
-                <div className="basis-2/3 relative">
-
+                <div className="basis-2/3 relative pb-[12vh]">
                 </div>
             </div>
         </Layout>
