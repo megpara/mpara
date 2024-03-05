@@ -12,6 +12,13 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="stylesheet" href="https://use.typekit.net/oev0dtt.css" />
         <link rel="stylesheet" href="https://use.typekit.net/uao4cwk.css" />
+        <meta property="og:title" content="EMPARA | A movement and choreography company" key="ogtitle" />
+        <meta
+        property="og:description"
+        content="A movement and choreography company"
+        key="ogdesc"
+        />
+        <meta property="og:image" content="/daphne.jpg" />
       </Head>
           <Header />
           <Component {...pageProps} />
