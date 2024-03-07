@@ -7,7 +7,7 @@ export default function Origin() {
                     <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">
                         <div className="basis-1/2 text-4xl font-display tracking-widest">Origin</div>
                         <div className="basis-1/2 text-[#bab5b1] text-sm italic">
-                            Empara originates from the Latin word &quot;emparer,&quot; meaning to take posession of something. In the work we take possesion of the human form, the skin and what it holds, emotions, lineage, and the collective unconcious.
+                            Empara originates from the Latin word &quot;emparer,&quot; meaning to take posession of something. In the work we take possesion of the human form, the skin and what it holds, emotions, lineage, and the collective unconscious.
                         </div>
                     </div>
                     <div className="text-white block md:flex justify-between pt-[24vh] pb-[12vh] px-4 md:px-8">
