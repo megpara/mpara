@@ -9,7 +9,7 @@ export default function Events() {
                         <div className="pt-8 text-center">
                         <div className="font-display tracking-widest text-3xl pb-2">Well Done</div>
                     <div className="text-sm italic text-[#bab5b1] pb-4">An immersive dining experience</div>
-                            <div className="text-sm italic text-[#bab5b1]">April 29th, 7:00pm</div>
+                            <div className="text-sm italic text-[#bab5b1]">May 20th, 7:00pm</div>
                             <div className="text-sm italic text-[#bab5b1]">Melody Wine Bar on Virgil</div>
                             <a href="https://www.welldonetheshow.com/" target="_blank">
                                 <div className="mt-4 text-[#bab5b1] underline underline-offset-4 uppercase tracking-widest text-xs">Get tickets</div>
