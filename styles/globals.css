@@ -29,8 +29,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.heading {
-    
+input {
+   background-color: unset; 
 }
 
 .display {
