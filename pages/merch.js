@@ -6,6 +6,10 @@ export default function Merch() {
         <Layout>
             <Head>
                 <title>Merch</title>
+                <meta
+                name="description"
+                content="Empara gear | Recycled clothing items screen printed by hand in LA"
+                />
             </Head>
             <div className="relative w-full h-full flex flex-col">
                 <div className="basis-1/3 text-white flex justify-between pt-[24vh] px-4 md:px-8">

@@ -86,6 +86,10 @@ export default function Teaching() {
         <Layout>
             <Head>
                 <title>Teaching</title>
+                <meta
+                name="description"
+                content="Empara class | Join us for ballet and contemporary"
+                />
             </Head>
             <div className="relative">
                 <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">

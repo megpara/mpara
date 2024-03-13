@@ -6,6 +6,10 @@ export default function Mail() {
         <Layout>
             <Head>
                 <title>Mail</title>
+                <meta
+                name="description"
+                content="Sign up to Empara's newsletter to stay up to date on class, shows, and more"
+                />
             </Head>
             <div id="mc_embed_shell" className="text-[#bab5b1] lowercase italic flex flex-col items-center justify-center w-full h-screen">
             <div id="mc_embed_signup" className="w-1/2">

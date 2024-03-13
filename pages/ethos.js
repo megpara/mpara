@@ -6,6 +6,10 @@ export default function Ethos() {
         <Layout>
             <Head>
                 <title>Ethos</title>
+                <meta
+                name="description"
+                content="Explore the soul of Empara and its mission in the movement community"
+                />
             </Head>
             <div className="relative w-full h-full flex flex-col">
                 <div className="basis-1/3 text-white flex justify-between pt-[24vh] px-4 md:px-8">

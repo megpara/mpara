@@ -6,6 +6,10 @@ export default function Origin() {
         <Layout>
             <Head>
                 <title>Origin</title>
+                <meta
+                name="description"
+                content="The beginning | How and why Empara got its start"
+                />
             </Head>
                 <div className="relative z-[-1]">
                     <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">

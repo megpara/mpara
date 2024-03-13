@@ -45,6 +45,10 @@ export default function Work() {
         <Layout>
             <Head>
                 <title>Work</title>
+                <meta
+                name="description"
+                content="Past works | View the archive"
+                />
             </Head>
             <div className="text-white w-full columns-2 md:columns-3 gap-2 md:gap-4 p-8 pt-[15vh] relative italic">
                 {works.map((work) => (

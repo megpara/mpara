@@ -6,6 +6,10 @@ export default function Events() {
         <Layout>
             <Head>
                 <title>Events</title>
+                <meta
+                name="description"
+                content="Get tickets to upcoming shows"
+                />
             </Head>
             <div className="panel w-screen h-screen text-white flex flex-col items-center justify-center pt-[12vh]">
                     <div className="w-3/4 flex flex-col items-center justify-center cursor-pointer">
