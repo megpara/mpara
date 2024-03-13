@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 const upcoming = [
@@ -83,6 +84,9 @@ const past = [
 export default function Teaching() {
     return (
         <Layout>
+            <Head>
+                <title>Teaching</title>
+            </Head>
             <div className="relative">
                 <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
                     <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Upcoming</div>

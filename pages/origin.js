@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 export default function Origin() {
     return (
         <Layout>
+            <Head>
+                <title>Origin</title>
+            </Head>
                 <div className="relative z-[-1]">
                     <div className="text-white flex justify-between pt-[24vh] px-4 md:px-8">
                         <div className="basis-1/2 text-4xl font-display tracking-widest">Origin</div>

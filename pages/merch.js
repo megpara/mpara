@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 export default function Merch() {
     return (
         <Layout>
+            <Head>
+                <title>Merch</title>
+            </Head>
             <div className="relative w-full h-full flex flex-col">
                 <div className="basis-1/3 text-white flex justify-between pt-[24vh] px-4 md:px-8">
                     <div className="basis-1/2 font-display text-4xl tracking-widest">Merch</div>

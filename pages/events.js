@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 export default function Events() {
     return (
         <Layout>
+            <Head>
+                <title>Events</title>
+            </Head>
             <div className="panel w-screen h-screen text-white flex flex-col items-center justify-center pt-[12vh]">
                     <div className="w-3/4 flex flex-col items-center justify-center cursor-pointer">
                         <video loop autoPlay muted src="/wdtease.mov" playsInline className="w-full md:w-1/2 h-auto"/>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import Teaser from "../components/Teaser";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const works = [
     {
@@ -42,6 +43,9 @@ export default function Work() {
 
     return(
         <Layout>
+            <Head>
+                <title>Work</title>
+            </Head>
             <div className="text-white w-full columns-2 md:columns-3 gap-2 md:gap-4 p-8 pt-[15vh] relative italic">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column" onClick={(work.title == "Well Done") ? togglewd : mockClick}>

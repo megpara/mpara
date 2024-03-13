@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 export default function Mail() {
     return (
         <Layout>
+            <Head>
+                <title>Mail</title>
+            </Head>
             <div id="mc_embed_shell" className="text-[#bab5b1] lowercase italic flex flex-col items-center justify-center w-full h-screen">
             <div id="mc_embed_signup" className="w-1/2">
                 <form action="https://emparadance.us22.list-manage.com/subscribe/post?u=2eb0a1c7eee3d1512a8c83d89&amp;id=362dfaedef&amp;f_id=00edc3e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
