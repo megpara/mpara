@@ -11,7 +11,7 @@ const works = [
     },
     {
         img: "/headshot.png",
-        title: "Heliophilia",
+        title: "Sun Lover",
         subtitle: "Coming soon"
     },
     {
@@ -55,7 +55,7 @@ export default function WorkOld() {
             {works.map((work, index) => (
                 <div className="panel w-screen h-screen text-white flex flex-col items-center justify-center">
                     <div className="w-3/4 flex flex-col items-center justify-center">
-                        <img src={work.img} alt="Project image" className="w-1/2 h-auto"/>
+                        {/* <Image src={work.img} alt="Project image" className="w-1/2 h-auto"/> */}
                         <div>{work.title}</div>
                         <div>{work.subtitle}</div>
                     </div>

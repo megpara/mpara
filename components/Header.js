@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "./Menu";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Header() {
     const router = useRouter();
@@ -41,7 +42,7 @@ export default function Header() {
                 <a href="https://www.instagram.com/" target="_blank">Ig</a>
             </div>
             <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace>
-                <img src="logofinal.png" alt="Empara logo" className="max-w-[140px]"/>
+                <Image src="/logofinal.png" alt="Empara logo" width={140} height={25}/>
             </Link>
             {menuOpen ? (
                 <div className="basis-1/3 flex justify-end">
