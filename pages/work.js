@@ -53,7 +53,7 @@ export default function Work() {
             <div className="text-white w-full columns-2 md:columns-3 gap-2 md:gap-4 p-8 pt-[15vh] relative italic">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column" onClick={(work.title == "Well Done") ? togglewd : mockClick}>
-                        {(work.type) == "image" && <img src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
+                        {(work.type) == "image" && <img src={work.media} alt="Project image" className="opacity-80 group-hover:opacity-100 duration-300"/>}
                         {(work.type) == "video" && <video loop autoPlay muted playsInline src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
                         <div className="text-[#bab5b1] group-hover:text-white duration-300 pt-8">
                             <div className="">{work.title}</div>
