@@ -4,7 +4,7 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>Empara | A Movement Company Based in Los Angeles</title>
         <meta
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
           <Header />
           <Component {...pageProps} />
-    </>
+    </html>
   );
 }
 
