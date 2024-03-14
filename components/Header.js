@@ -52,13 +52,14 @@ export default function Header() {
                 }}
                 className="flex z-[200] items-center"
                 onClick={toggleMenu}
+                aria-label="Close"
                 >
                     X
                 </motion.button>
                 </div>
             ) : (
                 <div className="basis-1/3 flex flex-col items-end justify-center h-[12vh] z-[100] group">
-                <button onClick={() => setMenuOpen(!menuOpen)} className="flex">
+                <button onClick={() => setMenuOpen(!menuOpen)} className="flex" aria-label="Open">
                     <div className="group flex flex-col justify-between h-[15px] w-[35px] items-end">
                     <span className="h-[1px] w-full bg-[#faeddd]" />
                     <span className="h-[1px] w-[60%] group-hover:w-full duration-700 bg-[#faeddd]" />
@@ -69,7 +70,7 @@ export default function Header() {
             )}
             {/* {!menuOpen &&
                 <div className="basis-1/3 flex flex-col items-end justify-center h-[12vh] pr-4 md:pr-8 z-[100] group">
-                <button onClick={() => setMenuOpen(!menuOpen)} className="flex">
+                <button onClick={() => setMenuOpen(!menuOpen)} className="flex" aria-label="Open">
                     <div className="group flex flex-col justify-between h-[15px] w-[35px] items-end">
                     <span className="h-[1px] w-full bg-[#faeddd]" />
                     <span className="h-[1px] w-[60%] group-hover:w-full duration-700 bg-[#faeddd]" />
