@@ -24,7 +24,6 @@ function MyApp({ Component, pageProps }) {
         key="ogdesc"
         />
         <meta property="og:image" content="/daphne.jpg" />
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
       </Head>
           <Header />
           <Component {...pageProps} />
