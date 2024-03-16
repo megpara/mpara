@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { decode } from 'html-entities';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 const NewsletterForm = ( { status, message, onValidated }) => {
 
@@ -96,4 +97,27 @@ const NewsletterForm = ( { status, message, onValidated }) => {
   );
 }
 
-export default NewsletterForm;
+const NewsletterSubscribe = () => {
+
+    const MAILCHIMP_URL = "https://emparadance.us22.list-manage.com/subscribe/post?u=2eb0a1c7eee3d1512a8c83d89&amp;id=362dfaedef&amp;f_id=00edc3e1f0";
+  
+    return (
+      <MailchimpSubscribe
+        url={ MAILCHIMP_URL }
+        render={ ( props ) => {
+          const { subscribe, status, message } = props || {};
+          console.log("status" + status);
+          return (
+            <NewsletterForm
+              status={ status }
+              message={ message }
+              onValidated={formData => subscribe(formData)}
+            />
+          );
+        } }
+      />
+    );
+  };
+  
+  export default NewsletterSubscribe;
+  
