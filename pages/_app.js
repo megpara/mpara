@@ -6,10 +6,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <html lang="en">
       <Head>
-        <title>Empara | A Movement Company Based in Los Angeles</title>
+        <title>Empara | A Movement Company</title>
         <meta
           name="description"
-          content="Empara is a movement and choreography company focused on creating nontraditional contemporary dance experiences. Empara celebrates other art forms and encourages all bodies to connect to their innate desire to move."
+          content="Empara is a movement and choreography company focused on creating nontraditional contemporary dance experiences."
         />
         <meta
           name="viewport"
