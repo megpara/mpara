@@ -75,17 +75,17 @@ const NewsletterForm = ( { status, message, onValidated }) => {
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
         </div>
-        <div className="button-wrap wp-block-button">
-          <button className="wp-block-button__link" onClick={handleFormSubmit}>
+        <div className="button-wrap wp-block-button bg-white text-black p-4">
+          <button className="wp-block-button__link font-medium text-sm" onClick={handleFormSubmit}>
             Submit
           </button>
         </div>
       </div>
-      <div className="newsletter-form-info">
+      <div className="newsletter-form-info text-[12px] italic text-[#bab5b1]">
         {status === "sending" && <div>Sending...</div>}
         {status === "error" || error ? (
           <div
-            className="newsletter-form-error text-sm italic text-[#bab5b1]"
+            className="newsletter-form-error"
             dangerouslySetInnerHTML={{ __html: error || getMessage( message ) }}
           />
         ) : null }
