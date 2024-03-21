@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
         key="ogdesc"
         />
         <meta property="og:image" content="/daphne.jpg" />
+        <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       </Head>
           <Header />
           <Component {...pageProps} />
