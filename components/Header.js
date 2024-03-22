@@ -37,7 +37,7 @@ export default function Header() {
     return (
         <>
         <div className={"w-full h-[12vh] fixed flex justify-start items-center text-white z-[60] px-4 md:px-8" + (bg ? " bg-[#131313]" : "")}>
-            <div className="basis-1/3 flex gap-4 z-40 lowercase italic font-thin text-sm">
+            <div className="basis-1/3 flex gap-4 z-40 lowercase font-thin text-xs">
                 <a href="https://vimeo.com/user137775228" target="_blank">Vimeo</a>
                 <a href="https://www.instagram.com/" target="_blank">Ig</a>
             </div>

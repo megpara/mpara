@@ -17,7 +17,7 @@ export default function Layout({ children }) {
             }, 3000);
         }
         if (router.asPath != "/") {
-            // gsap.from(".child", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
+            gsap.from(".child", { duration: 1, opacity: 0, y: 50, delay: 0.5 });
         }
         return () => clearInterval(interval);
     }, [])

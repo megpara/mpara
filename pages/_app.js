@@ -1,10 +1,25 @@
 import Header from "../components/Header";
 import "../styles/globals.css";
 import Head from "next/head";
+import localFont from '@next/font/local';
+
+const optimanova = localFont({
+  src: [
+    {
+      path: "../public/fonts/OptimaNovaLTProLight.otf",
+      weight: "100"
+    },
+    {
+      path: '../public/fonts/OptimaNovaLTProRegular.otf',
+      weight: '400'
+    }
+  ],
+  variable: '--font-optima-nova'
+})
 
 function MyApp({ Component, pageProps }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${optimanova.variable} font-paragraph`}>
       <Head>
         <title>Empara | A Movement Company</title>
         <meta
@@ -23,7 +38,7 @@ function MyApp({ Component, pageProps }) {
         content="A movement company"
         key="ogdesc"
         />
-        <meta property="og:image" content="/daphne.jpg" />
+        <meta property="og:image" content="/og.png" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       </Head>
           <Header />

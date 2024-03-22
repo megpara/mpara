@@ -64,7 +64,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center text-white gap-4">
     <div className="font-display text-4xl">Join our mailing list</div>
-    <div className="text-sm italic text-[#bab5b1]">Sign up to Empara's newsletter to stay up to date on class, shows, and more</div>
+    <div className="text-sm text-[#bab5b1]">Sign up to Empara's newsletter to stay up to date on class, shows, and more</div>
       <div className="d-flex newsletter-input-fields flex items-center">
         <div className="mc-field-group">
           <input
@@ -82,7 +82,6 @@ const NewsletterForm = ( { status, message, onValidated }) => {
         </div>
       </div>
       <div className="newsletter-form-info text-[12px] italic text-[#bab5b1]">
-        {status === "sending" && <div>Sending...</div>}
         {status === "error" || error ? (
           <div
             className="newsletter-form-error"
