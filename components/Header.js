@@ -51,11 +51,11 @@ export default function Header() {
                     scale: 1.2,
                     transition: { duration: 0.2 },
                 }}
-                className="flex z-[200] items-center"
+                className="flex z-[200] items-center text-2xl"
                 onClick={toggleMenu}
                 aria-label="Close"
                 >
-                    X
+                    x
                 </motion.button>
                 </div>
             ) : (
