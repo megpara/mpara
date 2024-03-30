@@ -62,9 +62,9 @@ const NewsletterForm = ( { status, message, onValidated }) => {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center text-white gap-4">
+    <div className="w-full h-[90vh] md:h-screen flex flex-col justify-center items-center text-white gap-4">
     <div className="font-display text-4xl">Join our mailing list</div>
-    <div className="text-sm text-[#bab5b1]">Sign up to Empara's newsletter to stay up to date on class, shows, and more</div>
+    <div className="text-sm text-[#bab5b1] text-center md:text-left px-4 md:px-0">Sign up to Empara's newsletter to stay up to date on class, shows, and more</div>
       <div className="d-flex newsletter-input-fields flex items-center">
         <div className="mc-field-group">
           <input
