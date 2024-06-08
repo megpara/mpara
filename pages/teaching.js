@@ -21,12 +21,6 @@ const upcoming = [
     //     info: ""
     // },
     {
-        title: "Grand Arts master class",
-        date: "May 2024",
-        location: "",
-        info: ""
-    },
-    {
         title: "Park City",
         date: "July 2024",
         location: "",
@@ -51,6 +45,10 @@ const upcoming = [
 ]
 
 const past = [
+    {
+        title: "Grand Arts master class",
+        date: "May 2024",
+    },
     {
         title: "University of Redlands",
         date: "2022-2023"

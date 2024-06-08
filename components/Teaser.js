@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Teaser({ open, toggle }) {
     return (
@@ -29,7 +30,8 @@ export default function Teaser({ open, toggle }) {
                 Performers: Marco Palomino, Daphne Fernberger, Travis Lim<br />
                 Space: Reunion LA<br />
                 Producer: Halston Bruce<br />
-                Music: 3. Sequentia: Lacrimosa by Jacky Terrasson</p>
+                Music: 3. Sequentia: Lacrimosa by Jacky Terrasson<br />
+                <Link href="/work/welldone" className="uppercase underline">Live performance</Link></p>
               </div>
               </div>
               </motion.div>
