@@ -4,28 +4,22 @@ import Layout from "../components/Layout";
 const upcoming = [
     {
         title: "All levels ballet",
-        date: "Wednesdays @ 9:30am",
+        date: "Tuesdays @ 6:30pm",
         location: "Highland Park, LA",
-        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619305"
+        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/765039"
     },
-    {
-        title: "All levels contemporary",
-        date: "Wednesdays @ 10:30am",
-        location: "Highland Park, LA",
-        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619308"
-    },
+    // {
+    //     title: "All levels contemporary",
+    //     date: "Wednesdays @ 10:30am",
+    //     location: "Highland Park, LA",
+    //     info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/619308"
+    // },
     // {
     //     title: "OCSA master class",
     //     date: "March 2024",
     //     location: "",
     //     info: ""
     // },
-    {
-        title: "Park City",
-        date: "July 2024",
-        location: "",
-        info: ""
-    },
     {
         title: "London",
         date: "August 2024",
@@ -50,8 +44,8 @@ const past = [
         date: "May 2024",
     },
     {
-        title: "University of Redlands",
-        date: "2022-2023"
+        title: "Los Angeles Dance Festival",
+        date: "2023 & 2024"
     },
     {
         title: "Genesis Studios",
@@ -74,8 +68,8 @@ const past = [
         date: "2023"
     },
     {
-        title: "Los Angeles Dance Festival",
-        date: "2023"
+        title: "University of Redlands",
+        date: "2022-2023"
     },
 ]
 

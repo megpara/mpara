@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
-export default function Teaser({ open, toggle }) {
+export default function Teaser({ open, toggle, src, caption }) {
     return (
         <AnimatePresence>
         {open && (
@@ -21,7 +21,7 @@ export default function Teaser({ open, toggle }) {
               <div className="w-3/4 h-full flex items-center justify-center">
               <div className="w-full h-full pb-12 flex flex-col items-center justify-center">
                 <div className="w-full h-full relative">
-                  <iframe src="https://player.vimeo.com/video/911319946?h=71f1037d61&autoplay=1&title=0&byline=0&portrait=0" className="absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                  <iframe src={`${src}?h=71f1037d61&autoplay=1&title=0&byline=0&portrait=0`} className="absolute top-0 left-0 w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
                     </iframe>
                 </div>
                 <script src="https://player.vimeo.com/api/player.js"></script>
