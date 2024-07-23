@@ -16,8 +16,9 @@ const works = [
     {
         media: "/work/heliophilia.jpg",
         title: "Sun Lover",
-        subtitle: "In collaboration with Leah Piepgras, coming soon",
+        subtitle: "In collaboration with Sculptor Leah Piepgras",
         type: "image",
+        url: "/work/oracleegg"
     },
     {
         media: "/work/hatis.jpg",
