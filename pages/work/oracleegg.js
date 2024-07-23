@@ -3,19 +3,19 @@ import Image from "next/image";
 
 const media = [
     {
-        location: "/work/oracleegg/biancaSkins.mp4",
+        location: "/work/oracleegg/biancaSkins.mov",
         type: "video"
     },
     {
-        location: "/work/oracleegg/cloudRemove.mp4",
+        location: "/work/oracleegg/cloudRemove.mov",
         type: "video"
     },
     {
-        location: "/work/oracleegg/davonHead.mp4",
+        location: "/work/oracleegg/davonHead.mov",
         type: "video"
     },
     {
-        location: "/work/oracleegg/walking.mp4",
+        location: "/work/oracleegg/walking.mov",
         type: "video"
     },
     {
@@ -23,7 +23,7 @@ const media = [
         type: "video"
     },
     {
-        location: "/work/oracleegg/covering.mp4",
+        location: "/work/oracleegg/covering.mov",
         type: "video"
     },
 ]
