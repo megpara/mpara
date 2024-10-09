@@ -8,7 +8,7 @@ import Image from "next/image";
 const works = [
     {
         media: "/wdtease.mov",
-        title: "Well Done",
+        title: '"Well Done" the Film',
         subtitle: "Concept, choreography, and direction",
         type: "video",
         url: "/work/welldonefilm",
@@ -21,10 +21,11 @@ const works = [
         url: "/work/oracleegg"
     },
     {
-        media: "/work/hatis.jpg",
-        title: "Hatis Noit",
-        subtitle: "Coming soon",
+        media: "/work/welldone/Empara_IWR-8.jpg",
+        title: '"Well Done" the Show',
+        subtitle: "Concept, choreography, and direction",
         type: "image",
+        url: "/work/welldone",
     },
     {
         media: "/work/clozee.mov",
@@ -35,9 +36,10 @@ const works = [
     },
     {
         media: "/work/ana.png",
-        title: "Becoming",
-        subtitle: "In collaboration with Ana Reyes, coming soon",
+        title: "She Sprang Out Red",
+        subtitle: "In collaboration with Ana Reyes",
         type: "image",
+        url: "/work/ssor"
     }
 ];
 

@@ -31,7 +31,7 @@ const credits = [
         name: "Eric Tucker"
     },
     {
-        title: "Length",
+        title: "Duration",
         name: "90 minutes"
     }
 ]
