@@ -40,12 +40,12 @@ const images = [
     "/work/welldone/Empara_IWR-5.jpg",
     "/work/welldone/Empara_IWR-6.jpg",
     "/work/welldone/food2.png",
-    "/work/welldone/food1.jpg",
+    "/work/welldone/food1.JPG",
     "/work/welldone/Empara_IWR-8.jpg",
     "/work/welldone/Empara_IWR-1-small.jpg",
     "/work/welldone/Empara_IWR-7-small.jpg",
     "/work/welldone/Empara_IWR-2.jpg",
-    "/work/welldone/food3.jpg",
+    "/work/welldone/food3.JPG",
 ]
 
 export default function WellDone() {

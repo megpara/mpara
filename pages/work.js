@@ -7,18 +7,18 @@ import Image from "next/image";
 
 const works = [
     {
+        media: "/work/soho/6.JPG",
+        title: "Soho House",
+        subtitle: "Choreography",
+        type: "image",
+        url: "/work/sohohouse",
+    },
+    {
         media: "/wdtease.mov",
         title: '"Well Done" the Film',
         subtitle: "Concept, choreography, and direction",
         type: "video",
         url: "/work/welldonefilm",
-    },
-    {
-        media: "/work/heliophilia.jpg",
-        title: "Sun Lover",
-        subtitle: "In collaboration with Sculptor Leah Piepgras",
-        type: "image",
-        url: "/work/oracleegg"
     },
     {
         media: "/work/welldone/Empara_IWR-8.jpg",
@@ -35,7 +35,14 @@ const works = [
         url: "/work/clozee",
     },
     {
-        media: "/work/ana.png",
+        media: "/work/oracleegg/biancaSkins.mp4",
+        title: "Sun Lover",
+        subtitle: "In collaboration with Sculptor Leah Piepgras",
+        type: "video",
+        url: "/work/oracleegg"
+    },
+    {
+        media: "/work/ssor/2.png",
         title: "She Sprang Out Red",
         subtitle: "In collaboration with Ana Reyes",
         type: "image",
