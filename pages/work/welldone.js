@@ -33,6 +33,11 @@ const credits = [
     {
         title: "Duration",
         name: "90 minutes"
+    },
+    {
+        title: "Press",
+        name: "LA Dance Chronicle",
+        ref: "https://www.ladancechronicle.com/empara-presents-well-done-at-melody-wine-bar-for-immersive-experience/"
     }
 ]
 
@@ -59,9 +64,15 @@ export default function WellDone() {
                             <div className="basis-1/2">
                                 {credit.title}
                             </div>
+                            {credit.ref ? (
+                            <a className="basis-2/6 underline" href={credit.ref} target="_blank">
+                                {credit.name}
+                            </a>
+                            ) : (
                             <div className="basis-2/6">
                                 {credit.name}
                             </div>
+                            )}
                         </div>
                     ))}
                     </div>
