@@ -14,6 +14,13 @@ const works = [
         url: "/work/sohohouse",
     },
     {
+        media: "/work/bozomag/bozo.gif",
+        title: "Contemporary Art Review LA X BOZOMAG",
+        subtitle: "Empara Guest Performance",
+        type: "image",
+        url: "/work/bozomag"
+    },
+    {
         media: "/wdtease.mov",
         title: '"Well Done" the Film',
         subtitle: "Concept, choreography, and direction",
