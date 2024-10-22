@@ -4,9 +4,15 @@ import Layout from "../components/Layout";
 const upcoming = [
     {
         title: "All levels ballet",
-        date: "Tuesdays @ 6:30pm",
+        date: "Wednesdays @ 9:30am",
         location: "Highland Park, LA",
-        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/765039"
+        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/1013000?source=semesters"
+    },
+    {
+        title: "All levels contemporary",
+        date: "Wednesdays @ 10:30am",
+        location: "Highland Park, LA",
+        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/1013002?source=semesters"
     },
     // {
     //     title: "All levels contemporary",
@@ -21,18 +27,6 @@ const upcoming = [
     //     info: ""
     // },
     {
-        title: "London",
-        date: "August 2024",
-        location: "",
-        info: ""
-    },
-    {
-        title: "NYC",
-        date: "September 2024",
-        location: "",
-        info: ""
-    },
-    {
         title: "South Pasadena High School",
         date: "Ongoing"
     },
@@ -40,7 +34,7 @@ const upcoming = [
 
 const past = [
     {
-        title: "Grand Arts master class",
+        title: "Grand Arts High School master class",
         date: "May 2024",
     },
     {
@@ -68,7 +62,7 @@ const past = [
         date: "2023"
     },
     {
-        title: "University of Redlands",
+        title: "University of Redlands Faculty",
         date: "2022-2023"
     },
 ]
