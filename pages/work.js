@@ -35,7 +35,7 @@ const works = [
         url: "/work/welldone",
     },
     {
-        media: "/work/clozee.mov",
+        media: "/work/clozee.gif",
         title: "CloZee",
         subtitle: "Movement direction",
         type: "video",
