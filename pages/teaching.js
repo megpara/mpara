@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import { title } from "process";
 
 const upcoming = [
     {
@@ -65,6 +66,18 @@ const past = [
         title: "University of Redlands Faculty",
         date: "2022-2023"
     },
+    {
+        title: "Brockus Project Studios",
+        date: "2023"
+    },
+    {
+        title: "Stomping Ground LA",
+        date: "2023"
+    },
+    {
+        title: "Studio2 Berlin",
+        date: "2022"
+    }
 ]
 
 export default function Teaching() {
