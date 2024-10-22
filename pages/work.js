@@ -38,14 +38,14 @@ const works = [
         media: "/work/clozee.gif",
         title: "CloZee",
         subtitle: "Movement direction",
-        type: "video",
+        type: "image",
         url: "/work/clozee",
     },
     {
-        media: "/work/oracleegg/biancaSkins.mp4",
+        media: "/work/oracleegg/biancaSkins.gif",
         title: "Sun Lover",
         subtitle: "In collaboration with Sculptor Leah Piepgras",
-        type: "video",
+        type: "image",
         url: "/work/oracleegg"
     },
     {
