@@ -35,18 +35,18 @@ const works = [
         url: "/work/welldone",
     },
     {
+        media: "/work/cloudLift.png",
+        title: "Sun Lover",
+        subtitle: "In collaboration with Sculptor Leah Piepgras",
+        type: "image",
+        url: "/work/oracleegg"
+    },
+    {
         media: "/work/clozee.gif",
         title: "CloZee",
         subtitle: "Movement direction",
         type: "image",
         url: "/work/clozee",
-    },
-    {
-        media: "/work/oracleegg/biancaSkins.gif",
-        title: "Sun Lover",
-        subtitle: "In collaboration with Sculptor Leah Piepgras",
-        type: "image",
-        url: "/work/oracleegg"
     },
     {
         media: "/work/ssor/2.png",
