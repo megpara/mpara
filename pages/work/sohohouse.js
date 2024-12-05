@@ -27,6 +27,10 @@ const credits = [
         name: "Rabôt Clothing"
     },
     {
+        title: "Photographer",
+        name: "Oscar Mendoza"
+    },
+    {
         title: "Location",
         name: "Soho Warehouse"
     },
