@@ -8,6 +8,7 @@ import Image from "next/image";
 export default function Header() {
     const router = useRouter();
     const [bg, setBg] = useState(false);
+    const [isHovering, setIsHovering] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(false);
@@ -41,8 +42,11 @@ export default function Header() {
                 <a href="https://vimeo.com/user218114889" target="_blank">Vimeo</a>
                 <a href="https://www.instagram.com/_empara" target="_blank">Ig</a>
             </div>
-            <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace>
-                <Image src="/logofinal.png" alt="Empara logo" width={140} height={25}/>
+            <Link className="basis-1/3 flex justify-center z-40 relative" href="/" replace 
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+            >
+                <Image src={isHovering ? "/logofunky.png" : "/logofinal.png"} alt="Empara logo" width={140} height={25}/>
             </Link>
             {menuOpen ? (
                 <div className="basis-1/3 flex justify-end">

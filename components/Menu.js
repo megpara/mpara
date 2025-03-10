@@ -38,7 +38,7 @@ export default function Menu({ open, toggle }) {
                 <MenuItem subtitleOne="About" subtitleTwo="Empara" title="Origin" link="/origin" />
                 <MenuItem subtitleOne="Mission" subtitleTwo="statement" title="Ethos" link="/ethos" />
                 <MenuItem subtitleOne="Take" subtitleTwo="class" title="Teaching" link="/teaching" />
-                <MenuItem subtitleOne="Upcoming" subtitleTwo="shows" title="Events" link="/events" />
+                <MenuItem subtitleOne="Check back" subtitleTwo="soon" title="Events" link="/" />
                 <MenuItem subtitleOne="Order" subtitleTwo="now" title="Merch" link="/merch" />
             </div>
             <Footer />
