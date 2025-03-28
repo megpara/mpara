@@ -36,6 +36,10 @@ input {
     font-weight: 100;
 }
 
+select {
+    color: black;
+}
+
 @media (max-width: 768px) {
     .footer {
         width: calc(100vw - 2rem);
