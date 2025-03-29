@@ -4,16 +4,18 @@ import { title } from "process";
 
 const upcoming = [
     {
-        title: "All levels ballet",
-        date: "Wednesdays @ 9:30am",
-        location: "Highland Park, LA",
-        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/1013000?source=semesters"
+        title: "Empara: The Class",
+        date: "Friday 4/4",
+        time: "1-2:15pm",
+        location: "The Space LA",
+        info: "https://form.typeform.com/to/Fz5QOTl3"
     },
     {
-        title: "All levels contemporary",
-        date: "Wednesdays @ 10:30am",
-        location: "Highland Park, LA",
-        info: "https://www.hisawyer.com/twinkle-toes-dance-company/schedules/activity-set/1013002?source=semesters"
+        title: "Empara: The Class",
+        date: "Friday 4/11",
+        time: "1-2:15pm",
+        location: "The Space LA",
+        info: "https://form.typeform.com/to/Fz5QOTl3"
     },
     // {
     //     title: "All levels contemporary",
@@ -27,10 +29,10 @@ const upcoming = [
     //     location: "",
     //     info: ""
     // },
-    {
-        title: "South Pasadena High School",
-        date: "Ongoing"
-    },
+    // {
+    //     title: "South Pasadena High School",
+    //     date: "Ongoing"
+    // },
 ]
 
 const past = [
@@ -102,9 +104,15 @@ export default function Teaching() {
                             <div className="basis-2/6">
                                 {workshop.date}
                                 <br />
+                                {workshop.time}
+                                <br />
                                 {workshop.location}
                             </div>
-                            <a className="basis-1/6 text-right" href={workshop.info} target="_blank">{workshop.info ? "Register" : ""}</a>
+                            {workshop.info && 
+                                // <button className="bg-[#6e808d] p-2">
+                                    <a className="basis-1/6 text-right font-bold text-white underline" href={workshop.info} target="_blank">{workshop.info ? "Sign Up" : ""}</a>
+                                // </button>
+                            }
                         </div>
                     ))}
                     </div>
