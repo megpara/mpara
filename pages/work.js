@@ -42,10 +42,10 @@ const works = [
         url: "/work/clozee",
     },
     {
-        media: "/wdtease.mov",
+        media: "/TravisDCWLaurel.png",
         title: '"Well Done" the Film',
         subtitle: "Concept, choreography, and direction",
-        type: "video",
+        type: "image",
         url: "/work/welldonefilm",
     },
     {
