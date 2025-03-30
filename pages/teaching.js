@@ -93,7 +93,13 @@ export default function Teaching() {
                 />
             </Head>
             <div className="relative">
-                <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+                <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Empara: The Class</div>
+                <div className="basis-1/2 italic text-[#bab5b1] text-sm">
+                    Empara: The Class blends intense technical rigor with improvisational movement. Grounded in task-based exploration, strengthening and alignment, and phrase work, the class builds physical stamina while pushing the boundaries of personal expression. With influences from Wim Vandekeybus and Pina Bausch, the movement shifts between raw, animalistic physicality, pedestrian gestures, and moments of clear technique. Participants are encouraged to bring their own thoughts, emotions, and lived experiences into the work. Together, we will discover the transformative space we inhabit when we let go and surrender to the dance.
+                </div>
+            </div>
+                <div className="text-white block md:flex justify-between pt-[12vh] px-4 md:px-8">
                     <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Upcoming</div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {upcoming.map((workshop, index) => (
