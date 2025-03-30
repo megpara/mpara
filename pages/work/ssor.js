@@ -52,7 +52,7 @@ export default function SSOR() {
                     ))}
                     </div>
                 </div>
-                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-8 py-[15vh] relative">
+                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 py-8 px-4 md:px-8 py-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
                         <Image src={photo} alt="Photo of She Sprang Out Red" width={500} height={300} className="pb-2 md:pb-4" />

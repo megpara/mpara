@@ -75,12 +75,12 @@ export default function WellDone() {
                             )}
                         </div>
                     ))}
+                    <div className="w-full pt-[70%] relative">
+                        <iframe src="https://player.vimeo.com/video/1018468359?h=71f1037d61&autoplay=1&title=0&byline=0&portrait=0" className="w-full absolute h-full top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen />
+                    </div>
                     </div>
                 </div>
-                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-8 py-[15vh] relative">
-                    <div className="w-full flex flex-col items-center justify-center pb-2 md:pb-4">
-                        <iframe src="https://player.vimeo.com/video/1018468359?h=71f1037d61&autoplay=1&title=0&byline=0&portrait=0" className="w-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width={320} height={240} />
-                    </div>
+                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-8 pb-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
                         <Image src={photo} alt="Photo of Well Done" width={500} height={300} className="pb-2 md:pb-4" />

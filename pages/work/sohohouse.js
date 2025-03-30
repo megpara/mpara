@@ -49,7 +49,6 @@ const images = [
     "/work/soho/6.JPG",
     "/work/soho/7.JPG",
     "/work/soho/8.JPG",
-    // "/work/soho/9.JPEG",
 ]
 
 export default function SohoHouse() {
@@ -68,9 +67,12 @@ export default function SohoHouse() {
                             </div>
                         </div>
                     ))}
+                    <div className="w-full pt-[70%] relative">
+                        <iframe src="https://player.vimeo.com/video/1024592917?h=c0d60c6261&autoplay=1&title=0&byline=0&portrait=0" className="w-full absolute h-full top-0 left-0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen />
+                    </div>
                     </div>
                 </div>
-                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 p-8 py-[15vh] relative">
+                <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 py-8 px-4 md:px-8 pb-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
                         <Image src={photo} alt="Photo of Embodying the Equinox" width={500} height={300} className="pb-2 md:pb-4" />
