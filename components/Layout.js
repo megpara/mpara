@@ -26,6 +26,7 @@ export default function Layout({ children }) {
         <div className="w-full h-full relative">
             <Head>
                 <link id="icon" rel="icon" href="../../favicons/0.png" />
+                <link rel="preload" href="https://www.paypal.com/sdk/js?client-id=AXgz5VqpoO23JzH90mNz2vBKiDRIRB7OREs-LmEYALGylPsTU9Q2d-jIKSWdBF5G9mxdB3iOVX4JjDFI&components=buttons,hosted-buttons" as="script"></link>
             </Head>
             <div className="child">
             {children}

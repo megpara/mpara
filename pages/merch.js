@@ -1,10 +1,20 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Merch() {
+    const [ paypalLoaded, setPaypalLoaded ] = useState(false);
+
     useEffect(() => {
+        if (window.paypal && window.cartPaypal) {
+            setPaypalLoaded(true); // If already loaded, skip adding script
+            window.cartPaypal.Cart({ id: "pp-view-cart" });
+            window.cartPaypal.AddToCart({ id: "KN9VT6H4LBNHW" });
+            window.cartPaypal.AddToCart({ id: "JPT8WNM8TQ83W" });
+            window.cartPaypal.AddToCart({ id: "X3Y64G37SMVH2" });
+            return;
+        }
         // Dynamically load PayPal script
         const script = document.createElement("script");
         script.src = "https://www.paypal.com/sdk/js?client-id=AXgz5VqpoO23JzH90mNz2vBKiDRIRB7OREs-LmEYALGylPsTU9Q2d-jIKSWdBF5G9mxdB3iOVX4JjDFI&components=buttons,hosted-buttons";
@@ -37,6 +47,7 @@ export default function Merch() {
                 name="description"
                 content="Empara merch | Screen printed by hand in LA"
                 />
+                <script src="https://www.paypal.com/sdk/js?client-id=AXgz5VqpoO23JzH90mNz2vBKiDRIRB7OREs-LmEYALGylPsTU9Q2d-jIKSWdBF5G9mxdB3iOVX4JjDFI&components=buttons,hosted-buttons" async ></script>
                 <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="85AFT4H8HJVNN"></script>
             </Head>
             
