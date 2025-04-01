@@ -54,21 +54,21 @@ export default function Merch() {
                     <div className="flex flex-col items-center">
                         <Image src="/babyteeblackv3.png" width={300} height={300} priority />
                         <div className="text-xs pt-8 w-3/4 text-center"><a href="https://gilrodriguez.com/products/bellevue-tee-black" className="underline" target="_blank" >The Bellevue Tee</a> by Gil Rodriguez<br />A super soft short-sleeve made from cotton baby rib. Made in USA with locally knit materials. 100% cotton. </div>
-                        <div className="max-w-full pt-8">
+                        <div className="w-full max-w-full pt-8">
                             <paypal-add-to-cart-button data-id="KN9VT6H4LBNHW"></paypal-add-to-cart-button>
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <Image src="/babyteewhite.png" width={300} height={300} priority />
                         <div className="text-xs pt-8 w-3/4 text-center"><a href="https://gilrodriguez.com/products/bellevue-tee-black" className="underline" target="_blank" >The Bellevue Tee</a> by Gil Rodriguez<br />A super soft short-sleeve made from cotton baby rib. Made in USA with locally knit materials. 100% cotton.</div>
-                        <div className="max-w-full pt-8">
+                        <div className="w-full max-w-full pt-8">
                             <paypal-add-to-cart-button data-id="X3Y64G37SMVH2"></paypal-add-to-cart-button>
                         </div>
                     </div>
                     <div className="flex flex-col items-center">
                         <Image src="/cobaltbaggu.png" width={300} height={300} priority />
                         <div className="text-xs pt-8 w-3/4 text-center"><a href="https://www.baggu.com/products/standard-baggu-black" className="underline" target="_blank" >Standard Baggu</a> by Baggu<br />Assembled from one continuous piece of recycled ripstop nylon to minimize waste and increase durability. Holds up to 50lbs.</div>
-                        <div className="max-w-full pt-8">
+                        <div className="w-full max-w-full pt-8">
                             <paypal-add-to-cart-button data-id="JPT8WNM8TQ83W"></paypal-add-to-cart-button>
                         </div>
                     </div>
