@@ -4,18 +4,18 @@ import { title } from "process";
 
 const upcoming = [
     {
-        title: "Empara: The Class",
-        date: "Friday 4/4",
-        time: "1-2:15pm",
-        location: "The Space LA",
-        info: "https://form.typeform.com/to/Fz5QOTl3"
+        title: "Empara X TTDC Pre-Professional Workshop",
+        date: "Tuesday 5/13",
+        time: "5:30-7pm",
+        location: "TTDC Desert Studio",
+        info: "https://www.paypal.com/ncp/payment/8PMCQ29J8TGNQ"
     },
     {
-        title: "Empara: The Class",
-        date: "Friday 4/11",
-        time: "1-2:15pm",
-        location: "The Space LA",
-        info: "https://form.typeform.com/to/Fz5QOTl3"
+        title: "Empara Company Class",
+        date: "Tuesday 5/13",
+        time: "7-8:30pm",
+        location: "TTDC Desert Studio",
+        info: "https://www.paypal.com/ncp/payment/HZ455RS5X4XM4"
     },
     // {
     //     title: "All levels contemporary",
@@ -93,15 +93,17 @@ export default function Teaching() {
                 />
             </Head>
             <div className="relative">
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+            {/* <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
                 <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Empara: The Class</div>
                 <div className="basis-1/2 italic text-[#bab5b1] text-sm">
                     Empara: The Class blends intense technical rigor with improvisational movement. Grounded in task-based exploration, strengthening and alignment, and phrase work, the class builds physical stamina while pushing the boundaries of personal expression. With influences from Wim Vandekeybus and Pina Bausch, the movement shifts between raw, animalistic physicality, pedestrian gestures, and moments of clear technique. Participants are encouraged to bring their own thoughts, emotions, and lived experiences into the work. Together, we will discover the transformative space we inhabit when we let go and surrender to the dance.
                 </div>
-            </div>
-                <div className="text-white block md:flex justify-between pt-[12vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Upcoming</div>
-                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
+            </div> */}
+                <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
+                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Empara x TTDC <br />Tuesday, 5/13</div>
+                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic">
+                        <div className="pb-4">Join us in the Hi Desert for contemporary phrasework, strengthening and alignment, and task-based improvisation, led by Empara founder and TTDC teacher Meg Paradowski. Classes will be held at TTDC Desert Studio - 73911 29 Palms Hwy Twentynine Palms, CA 92277.</div>
+                    <div className="flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {upcoming.map((workshop, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
                             <div className="basis-1/2">
@@ -122,7 +124,30 @@ export default function Teaching() {
                         </div>
                     ))}
                     </div>
+                    </div>
                 </div>
+                {/* <div className="text-white block md:flex justify-between pt-[12vh] px-4 md:px-8">
+                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Upcoming</div>
+                    <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
+                    {upcoming.map((workshop, index) => (
+                        <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
+                            <div className="basis-1/2">
+                                {workshop.title}
+                            </div>
+                            <div className="basis-2/6">
+                                {workshop.date}
+                                <br />
+                                {workshop.time}
+                                <br />
+                                {workshop.location}
+                            </div>
+                            {workshop.info && 
+                                    <a className="basis-1/6 text-right font-bold text-white underline" href={workshop.info} target="_blank">{workshop.info ? "Sign Up" : ""}</a>
+                            }
+                        </div>
+                    ))}
+                    </div>
+                </div> */}
                 <div className="text-white block md:flex justify-between py-[12vh] px-4 md:px-8">
                     <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">Past</div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
