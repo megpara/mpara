@@ -33,8 +33,11 @@ const images = [
 export default function BozoMag() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 md:pb-0 text-4xl tracking-widest">CARLA X BOZOMAG</div>
+            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8 md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pb-4 md:pb-0 tracking-widest">
+                        <div className="font-display text-4xl">CARLA X BOZOMAG</div>
+                        <div className="text-[#bab5b1] text-sm italic pt-8">Set in an empty swimming pool, "Water Memory" is an ode to the Earth's oceans as well as an exploration of the body's internal water supply. The dancers embody water’s memory—its flow, its erosion, its absence—moving with a quiet tension that suggests both stiffness and longing.</div>
+                    </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>

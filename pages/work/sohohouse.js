@@ -54,8 +54,11 @@ const images = [
 export default function SohoHouse() {
     return (
         <Layout>
-            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8">
-                    <div className="basis-1/3 md:basis-1/2 font-display pb-4 pr-12 md:pb-0 text-4xl tracking-widest">Embodying the Equinox: A Feast for the Senses</div>
+            <div className="text-white block md:flex justify-between pt-[24vh] px-4 md:px-8  md:gap-8">
+                    <div className="basis-1/3 md:basis-1/2 pb-4 pr-12 md:pb-0 tracking-widest">
+                        <div className="font-display text-4xl">Embodying the Equinox: A Feast for the Senses</div>
+                        <div className="text-[#bab5b1] text-sm italic pt-8">The autumn equinox is a time for balance, responsibility, and engagement. This work connects people to deeper societal values and the essential relationship between people and land, all through an unconventional artist-orchestrated meal by way of creative edible installations, guided movement artists, and live scored sound.</div>
+                    </div>
                     <div className="basis-2/3 md:basis-1/2 text-[#bab5b1] text-sm italic flex flex-col divide-y-[1px] divide-[#bab5b1]">
                     {credits.map((credit, index) => (
                         <div className={"flex justify-between items-center pb-2" + (index !== 0 ? " pt-2" : "")}>
