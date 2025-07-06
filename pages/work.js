@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const works = [
     {
+        media: "/work/bloodlust/1.jpg",
+        title: "Bloodlust Wine Bar | The Aster LA",
+        subtitle: "Choreography",
+        type: "image",
+        url: "/work/bloodlust",
+    },
+    {
         media: "/work/soho/6.JPG",
         title: "Soho House",
         subtitle: "Choreography",
