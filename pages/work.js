@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const works = [
     {
+        media: "/work/simulacra/simulacra1.jpg",
+        title: "L.A. Dance Project's LAUNCH:LA 2025 | Simulacra",
+        subtitle: "Choreography",
+        type: "image",
+        url: "/work/simulacra",
+    },
+    {
         media: "/work/bloodlust/1.jpg",
         title: "Bloodlust Wine Bar | The Aster LA",
         subtitle: "Choreography",
