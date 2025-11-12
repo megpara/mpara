@@ -57,16 +57,16 @@ const credits = [
 ]
 
 const images = [
-    "/work/simulacra/simulacra1.JPG",
-    "/work/simulacra/simulacra9.JPG",
-    "/work/simulacra/simulacra4.JPG",
-    "/work/simulacra/simulacra2.JPG",
-    "/work/simulacra/simulacra3.JPG",
-    "/work/simulacra/simulacra7.JPG",
-    "/work/simulacra/simulacra5.JPG",
-    "/work/simulacra/simulacra6.JPG",
-    "/work/simulacra/simulacra11.JPG",
-    "/work/simulacra/simulacra10.JPG",
+    "/work/simulacra/simulacra1.jpg",
+    "/work/simulacra/simulacra9.jpg",
+    "/work/simulacra/simulacra4.jpg",
+    "/work/simulacra/simulacra2.jpg",
+    "/work/simulacra/simulacra3.jpg",
+    "/work/simulacra/simulacra7.jpg",
+    "/work/simulacra/simulacra5.jpg",
+    "/work/simulacra/simulacra6.jpg",
+    "/work/simulacra/simulacra11.jpg",
+    "/work/simulacra/simulacra10.jpg",
 ]
 
 export default function Simulacra() {
@@ -96,7 +96,7 @@ export default function Simulacra() {
                 <div className="text-white w-full columns-1 md:columns-3 gap-2 md:gap-4 py-8 px-4 md:px-8 pb-[15vh] relative">
                     {images.map((photo, index) => (
                         <div className="w-full flex flex-col items-center justify-center">
-                        <Image src={photo} alt="Photo of Embodying the Equinox" width={500} height={300} className="pb-2 md:pb-4" />
+                        <Image src={photo} alt="Photo of Simulacra" width={500} height={300} className="pb-2 md:pb-4" />
                         </div>
                     ))}
                 </div>
