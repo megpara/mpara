@@ -9,16 +9,16 @@ const works = [
     {
         media: "/work/simulacra/simulacra1.jpg",
         title: "L.A. Dance Project's LAUNCH:LA 2025 | Simulacra",
-        subtitle: "Choreography",
+        subtitle: "Concept, choreography, and direction",
         type: "image",
         url: "/work/simulacra",
     },
     {
-        media: "/work/bloodlust/1.jpg",
-        title: "Bloodlust Wine Bar | The Aster LA",
-        subtitle: "Choreography",
+        media: "/work/babst.jpg",
+        title: "Babst Gallery",
+        subtitle: "In collaboration with flautist Daniela Mars",
         type: "image",
-        url: "/work/bloodlust",
+        url: "/work/babst",
     },
     {
         media: "/work/soho/6.JPG",
@@ -35,11 +35,32 @@ const works = [
         url: "/work/bozomag"
     },
     {
+        media: "/work/bloodlust/1.jpg",
+        title: "Bloodlust Wine Bar | The Aster LA",
+        subtitle: "Choreography",
+        type: "image",
+        url: "/work/bloodlust",
+    },
+    {
         media: "/work/welldone/Empara_IWR-8.jpg",
         title: '"Well Done" the Show',
         subtitle: "Concept, choreography, and direction",
         type: "image",
         url: "/work/welldone",
+    },
+    {
+        media: "/work/cloudLift.png",
+        title: "Sun Lover",
+        subtitle: "In collaboration with Sculptor Leah Piepgras",
+        type: "image",
+        url: "/work/oracleegg"
+    },
+    {
+        media: "/TravisDCWLaurel.png",
+        title: '"Well Done" the Film',
+        subtitle: "Concept, choreography, and direction",
+        type: "image",
+        url: "/work/welldonefilm",
     },
     {
         media: "/work/ssor/2.png",
@@ -54,20 +75,6 @@ const works = [
         subtitle: "Movement direction",
         type: "image",
         url: "/work/clozee",
-    },
-    {
-        media: "/TravisDCWLaurel.png",
-        title: '"Well Done" the Film',
-        subtitle: "Concept, choreography, and direction",
-        type: "image",
-        url: "/work/welldonefilm",
-    },
-    {
-        media: "/work/cloudLift.png",
-        title: "Sun Lover",
-        subtitle: "In collaboration with Sculptor Leah Piepgras",
-        type: "image",
-        url: "/work/oracleegg"
     },
 ];
 
