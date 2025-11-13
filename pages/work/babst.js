@@ -24,6 +24,11 @@ const credits = [
     {
         title: "Cinematography",
         name: "Colin Lupe"
+    },
+    {
+        title: "Press",
+        name: "Curate LA",
+        ref: "https://mailchi.mp/curate.la/this-weeks-must-see-art-events-in-la-oct16?e=908d5cf1f5"
     }
 ]
 
@@ -41,9 +46,15 @@ export default function Babst() {
                             <div className="basis-1/2">
                                 {credit.title}
                             </div>
+                            {credit.ref ? (
+                            <a className="basis-2/6 underline" href={credit.ref} target="_blank">
+                                {credit.name}
+                            </a>
+                            ) : (
                             <div className="basis-2/6">
                                 {credit.name}
                             </div>
+                            )}
                         </div>
                     ))}
                     <div className="w-full pt-[70%] relative">
