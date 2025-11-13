@@ -53,6 +53,13 @@ const credits = [
     {
         title: "Photography",
         name: "Skye Schmidt Varga and Guillermo De La Barreda"
+    },
+    {
+        title: "Press",
+        name: "Autre Magazine",
+        ref: "https://autre.love/journal/2025/9/29/moving-to-keep-ourselves-whole-a-review-of-choreographer-megan-paradowskis-simulacra",
+        name2: "LA Dance Chronicle",
+        ref2: "https://www.ladancechronicle.com/l-a-dance-projects-launch-la-25-presented-two-very-strong-works/"
     }
 ]
 
@@ -83,9 +90,17 @@ export default function Simulacra() {
                             <div className="basis-1/2">
                                 {credit.title}
                             </div>
-                            <div className="basis-2/6">
-                                {credit.name}
-                            </div>
+                            {credit.ref ? (
+                                <div className="flex flex-col basis-2/6">
+                                <a className="underline" href={credit.ref} target="_blank">{credit.name}</a>
+                                {credit.ref2 && <a className="underline" href={credit.ref2} target="_blank">{credit.name2}</a>}
+                                </div>
+                            ) : (
+                                <div className="basis-2/6">
+                                    {credit.name}
+                                </div>
+                            )}
+                            
                         </div>
                     ))}
                     <div className="w-full pt-[70%] relative">
