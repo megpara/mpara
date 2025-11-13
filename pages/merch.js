@@ -39,6 +39,7 @@ export default function Merch() {
       if (!window.cartPaypal) return;
 
       window.cartPaypal.Cart({ id: "pp-view-cart" });
+      window.cartPaypal.AddToCart({ id: "RWJ3X5N6BWQDW" });
       window.cartPaypal.AddToCart({ id: "KN9VT6H4LBNHW" });
       window.cartPaypal.AddToCart({ id: "JPT8WNM8TQ83W" });
       window.cartPaypal.AddToCart({ id: "X3Y64G37SMVH2" });
@@ -61,7 +62,7 @@ export default function Merch() {
           />
         </Head>
 
-        <div className="relative w-full h-full flex flex-col">
+        <div className="relative w-full h-full flex flex-col merch">
           <div className="basis-1/3 text-white pt-[24vh] px-4 md:px-8">
             <div className="flex justify-between pb-12">
               <div className="basis-1/2 font-display text-4xl tracking-widest">
@@ -70,14 +71,14 @@ export default function Merch() {
               <div className="basis-1/2 italic text-[#bab5b1] text-sm">
                 Empara partners with our favorite local, sustainable brands to
                 offer ethical and high quality products. All items are screen
-                printed by hand by Megan Paradowski in Highland Park, LA, and
+                printed by Meg in Montecito Heights, LA, and
                 all proceeds go towards paying our dancers. Thank you for
                 supporting movement and the arts!
               </div>
             </div>
           </div>
 
-          <div className="grid !grid-cols-1 md:!grid-cols-2 lg:!grid-cols-3 gap-6 text-[#bab5b1] px-8 pb-24">
+          <div className="grid !grid-cols-1 md:!grid-cols-2 lg:!grid-cols-4 gap-12 text-[#bab5b1] px-8 pb-24">
             {/* Product 1 */}
             <div className="flex flex-col items-center justify-between">
               <Image src="/redtank.jpg" width={300} height={300} priority />
