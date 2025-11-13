@@ -79,7 +79,27 @@ export default function Merch() {
 
           <div className="grid !grid-cols-1 md:!grid-cols-2 lg:!grid-cols-3 gap-6 text-[#bab5b1] px-8 pb-24">
             {/* Product 1 */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-between">
+              <Image src="/redtank.jpg" width={300} height={300} priority />
+              <div className="text-xs pt-8 w-3/4 text-center">
+                <a
+                  href="https://gilrodriguez.com/products/lapointe-tank-tomate?variant=45618902532388"
+                  className="underline"
+                  target="_blank"
+                >
+                  The LaPointe Tank
+                </a>{" "}
+                by Gil Rodriguez<br />
+                A cotton baby rib spaghetti tank with square neckline. Made in USA
+                with locally knit materials. 100% cotton.
+              </div>
+              <div className="w-full max-w-full pt-8">
+                <paypal-add-to-cart-button data-id="RWJ3X5N6BWQDW"></paypal-add-to-cart-button>
+              </div>
+            </div>
+
+            {/* Product 2 */}
+            <div className="flex flex-col items-center justify-between">
               <Image src="/babyteeblackv3.png" width={300} height={300} priority />
               <div className="text-xs pt-8 w-3/4 text-center">
                 <a
@@ -98,8 +118,8 @@ export default function Merch() {
               </div>
             </div>
 
-            {/* Product 2 */}
-            <div className="flex flex-col items-center">
+            {/* Product 3 */}
+            <div className="flex flex-col items-center justify-between">
               <Image src="/babyteewhite.png" width={300} height={300} priority />
               <div className="text-xs pt-8 w-3/4 text-center">
                 <a
@@ -118,8 +138,8 @@ export default function Merch() {
               </div>
             </div>
 
-            {/* Product 3 */}
-            <div className="flex flex-col items-center">
+            {/* Product 4 */}
+            <div className="flex flex-col items-center justify-between">
               <Image src="/cobaltbaggu.png" width={300} height={300} priority />
               <div className="text-xs pt-8 w-3/4 text-center">
                 <a
