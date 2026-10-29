@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="/og.png" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       </Head>
-      <div className={`${optimanova.variable} font-paragraph`}>
+      <div className={`${optimanova.variable} font-paragraph w-full h-full`}>
         <Header />
         <Component {...pageProps} />
       </div>
